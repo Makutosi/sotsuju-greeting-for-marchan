@@ -1,0 +1,138 @@
+/* Birthday Greeting / 19.4.2025 */
+
+body {
+    text-align: center;
+    font-family:  'Kiwi Maru', serif;
+    background-color: #C5BAFF;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* --> 7 Aside flex-direction
+    Main axis  (justify-content) -> start, center, end, space-around, space-evenly, space-between
+    Cross axis (align-items) -> start, center, end
+*/
+h1, h2, h3, h4, p {
+    text-shadow: 0px 0px 1px black;
+}
+
+#bf-img {
+    width: 150px;
+    border-radius: 50%;
+    border: 6px solid #FB9EC6;
+}
+
+#bday-age {
+    background: #FB9EC6;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 5px 0 10px 0;
+}
+
+#bday-date {
+    margin: 0;
+    background: #FB9EC6;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gift-section {
+    margin-top: 50px;
+}
+
+.gift-title {
+    margin-bottom: 10px;
+}
+
+.gift-hint {
+    margin-top: 0;
+}
+
+#gift-img-music {
+    background-image: url('images/gift-cover.png');
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+  
+#gift-img-music:hover {
+    transform: scale(1.05);
+}
+  
+  
+#gift-img-roses {
+    background-position: center; /* 画像を中央に揃える */
+    background-size: cover; /* 必要に応じて全体を覆う  */
+}
+
+#gift-img-sweets {
+    background-position: center; /* 画像を中央に揃える */
+    background-size: cover; /* 必要に応じて全体を覆う  */
+}
+
+#gift-img-cheers {
+    height: 200px;
+    background-position: center; /* 画像を中央に揃える */
+    background-size: cover; /* 必要に応じて全体を覆う設定を維持 */
+}
+
+.gift-img {
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    background-image: url("images/gift-cover.png"); 
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+.gift-img:hover {
+    transform: scale(1.05);
+}
+  
+#gift-img-happy:hover {
+    background-image: url("images/happy.gif"); 
+}
+
+#gift-img-roses:hover {
+    background-image: url("images/roses.gif"); 
+}
+
+#gift-img-sweets:hover {
+    background-image: url("images/sweets.gif"); 
+}
+
+#gift-img-cheers:hover {
+    background-image: url("images/cheers.gif"); 
+}
+
+a {
+    color: white;
+}
+
+/*  background-size: cover; 
+    背景画像を自然に拡大縮小
+    隙間の防止(画像のサイズが小さかったり、画面が横長や縦長のときでも、コンテナ全体を埋め)
+    一貫したデザイン */
+/*  タブレットやスマホ向け  
+@media (max-width: 768px) { 
+    .gift-img {
+        background-size: cover;
+        background-position: center; 
+    }
+}*/
