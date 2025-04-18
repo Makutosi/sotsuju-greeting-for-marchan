@@ -3,16 +3,13 @@
 body {
     text-align: center;
     font-family:  'Kiwi Maru', serif;
-    background-color: #C5BAFF;
+    background: linear-gradient(to bottom, #c5baff, #e8dcff);
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-/* --> 7 Aside flex-direction
-    Main axis  (justify-content) -> start, center, end, space-around, space-evenly, space-between
-    Cross axis (align-items) -> start, center, end
-*/
+/*     background-color: #C5BAFF;*/
 h1, h2, h3, h4, p {
     text-shadow: 0px 0px 1px black;
 }
@@ -71,21 +68,20 @@ h1, h2, h3, h4, p {
     transform: scale(1.05);
 }
   
-  
 #gift-img-roses {
-    background-position: center; /* 画像を中央に揃える */
-    background-size: cover; /* 必要に応じて全体を覆う  */
+    background-position: center; /* Center an image */
+    background-size: cover; /* Cover the whole area if necessary */
 }
 
 #gift-img-sweets {
-    background-position: center; /* 画像を中央に揃える */
-    background-size: cover; /* 必要に応じて全体を覆う  */
+    background-position: center; 
+    background-size: cover; 
 }
 
 #gift-img-cheers {
     height: 200px;
-    background-position: center; /* 画像を中央に揃える */
-    background-size: cover; /* 必要に応じて全体を覆う設定を維持 */
+    background-position: center; 
+    background-size: cover; /* Maintain full coverage if desired */
 }
 
 .gift-img {
@@ -99,7 +95,7 @@ h1, h2, h3, h4, p {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease;
     cursor: pointer;
-  }
+}
   
 .gift-img:hover {
     transform: scale(1.05);
@@ -125,14 +121,29 @@ a {
     color: white;
 }
 
-/*  background-size: cover; 
-    背景画像を自然に拡大縮小
-    隙間の防止(画像のサイズが小さかったり、画面が横長や縦長のときでも、コンテナ全体を埋め)
-    一貫したデザイン */
-/*  タブレットやスマホ向け  
-@media (max-width: 768px) { 
-    .gift-img {
-        background-size: cover;
-        background-position: center; 
+@media screen and (max-width: 600px) {
+    body {
+      padding: 10px;
     }
-}*/
+  
+    #bf-img {
+      width: 100px;
+      border-width: 4px;
+    }
+  
+    .gift-img {
+      width: 90vw;
+      height: 90vw;
+    }
+  
+    #gift-img-music {
+      width: 90vw;
+      height: 90vw;
+    }
+  
+    h1, h2, h3, h4, p {
+      font-size: 16px;
+      line-height: 1.4;
+    }
+  }
+  
